@@ -1,6 +1,5 @@
-/*!
+/*
  * Made by Nima Izadi (nim.izadi@gmail.com / @Nima_Izadi / github.com/nim1989)
- *
  */
 
 @import "mixins_and_vars";
@@ -32,10 +31,6 @@
     left: 6px;
 }
 
-$datepicker-width: 18em;
-$datepicker-height: 18em;
-$datepicker-header-height: 2.5em;
-
 .datepicker_bootstrap {
     position        : absolute;
     font-size       : 1em;
@@ -64,7 +59,7 @@ $datepicker-header-height: 2.5em;
                 padding : 0.5em;
                 @include border-radius(3px);
                 &:hover {
-                    background-color: $grayLighter;
+                    background-color: $hoveredColor;
                 }
             }
         }
@@ -81,7 +76,7 @@ $datepicker-header-height: 2.5em;
         .previous {
             left            : 0.4em;
             border-right    : 7px solid black;
-            &:hover { border-right-color: $grayLight; }
+            &:hover { border-right-color: $hoveredColor; }
         }
         .next {
             right: 0.4em;
@@ -145,7 +140,7 @@ $datepicker-header-height: 2.5em;
         cursor: pointer;
         @include border-radius(3px);
         &:hover {
-            background-color: $grayLighter;
+            background-color: $hoveredColor;
         }
         &.selected, &.selected:hover {
             @extend .selected-button;
@@ -173,7 +168,7 @@ $datepicker-header-height: 2.5em;
     .time {
         position  : relative;
         width     : 100%;
-        height    : 13.5em;
+        padding-top: 3em;
         text-align: center;
         > div {
             display: inline-block;
