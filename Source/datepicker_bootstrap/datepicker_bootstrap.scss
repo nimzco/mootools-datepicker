@@ -132,6 +132,9 @@
         .otherMonth {
             color: $grayLight;
         }
+        .pastDays {
+            color: lighten($gray-light, 10%);
+        }
     }
 
 
